@@ -118,7 +118,7 @@ chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFuncti
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
-deafultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
+defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
 
 
 renders["worldday"] = {

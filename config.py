@@ -94,21 +94,21 @@ freeforall="Free for all to use"
 #Points of Intrest for "world"
 places_world=[
     #Towns
-    ["id":"Town","x":-218,"y":70,"z":-1320,"name":"Caberpan"],
-    ["id":"Town","x":-413,"y":63,"z":-1675,"name":"Overlake"],
-    ["id":"Town","x":-937,"y":72,"z":-1898,"name":"Bowlshaft"],
-    ["id":"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn"],
-    ["id":"Town","x":-664,"y":65,"z":660],
+    {'id':"Town","x":-218,"y":70,"z":-1320,"name":"Caberpan"},
+    {'id':"Town","x":-413,"y":63,"z":-1675,"name":"Overlake"},
+    {'id':"Town","x":-937,"y":72,"z":-1898,"name":"Bowlshaft"},
+    {'id':"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn"},
+    {"id":"Town","x":-664,"y":65,"z":660},
     #Public Zombie shelters
-    ["id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"],
+    {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"},
     #Public farms
-    ["id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"],
+    {"id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"},
     #Public chests
-    ["id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"],
+    {"id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"},
     #Cobblestone Generators
-    ["id":"Cobblestone Generator","x"-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall],
+    {"id":"Cobblestone Generator","x"-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     #Miscellaneous points of interest
-    ["id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"]
+    {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]
 
 townsDict=dict(name="Towns", icon="icons/marker_town.png", filterFunction=townFilter,checked=True)

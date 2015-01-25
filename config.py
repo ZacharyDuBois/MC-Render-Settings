@@ -106,7 +106,7 @@ places_world=[
     #Public chests
     {"id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"},
     #Cobblestone Generators
-    {"id":"Cobblestone Generator","x"-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
+    {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]
@@ -118,7 +118,7 @@ chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFuncti
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
-deafultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
+defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
 
 
 renders["worldday"] = {

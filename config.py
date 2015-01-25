@@ -7,6 +7,118 @@ worlds["oldworld"] = "/home/zacharydubois/render/worlds/old_world"
 worlds["oldnether"] = "/home/zacharydubois/render/worlds/old_world_nether"
 worlds["oldend"] = "/home/zacharydubois/render/worlds/old_world_the_end"
 
+        
+def townFilter(poi):
+    if poi["id"] == "Town":
+        if not "name" in poi:
+            poiName = "&lt;unnamed town&gt;"
+        else:
+            poiName = poi["name"]
+        poiDescription=poiName
+        if "region" in poi:
+            poiName+=", "+poi["region"]
+            poiDescription+=",\n"+poi["region"]+"\n"
+        if "mayor" in poi:
+            poiDescription+="Mayor: "+poi["mayor"]+"\n"
+        elif "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+="\n"+poi["description"]
+        return (poiName,poiDescription)
+
+def publicZombieShelterFilter(poi):
+    if poi["id"] == "Zombie Shelter":
+        poiName = poi["name"]
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+def privateZombieShelterFilter(poi):
+    if poi["id"] == "Private Zombie Shelter":
+        poiName = poi["name"]
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+def publicChestFilter(poi):
+    if poi["id"] == "Public Chest":
+        poiName = poi["name"]
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+def publicCobblestoneGeneratorFilter(poi):
+    if poi["id"] == "Cobblestone Generator":
+        poiName = poi["name"]
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+def publicFarmFilter(poi):
+    if poi["id"] == "Public Farm":
+        if "name" in description:
+            poiName = poi["name"]
+        else:
+            poiName = "Public Farm"
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+def miscFilter(poi):
+    if poi["id"] == "Misc":
+        poiName = poi["name"]
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
+freeforall="Free for all to use"
+
+#Points of Intrest for "world"
+places_world=[
+    #Towns
+    ["id":"Town","x":-218,"y":70,"z":-1320,"name":"Caberpan"],
+    ["id":"Town","x":-413,"y":63,"z":-1675,"name":"Overlake"],
+    ["id":"Town","x":-937,"y":72,"z":-1898,"name":"Bowlshaft"],
+    ["id":"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn"],
+    ["id":"Town","x":-664,"y":65,"z":660],
+    #Public Zombie shelters
+    ["id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"],
+    #Public farms
+    ["id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"],
+    #Public chests
+    ["id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"],
+    #Cobblestone Generators
+    ["id":"Cobblestone Generator","x"-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall],
+    #Miscellaneous points of interest
+    ["id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"]
+]
+
+townsDict=dict(name="Towns", icon="icons/marker_town.png", filterFunction=townFilter,checked=True)
+sheltersDict=dict(name="Public zombie shelters", icon="icons/marker_tower.png",filterFunction=publicZombieShelterFilter)
+farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=publicFarmFilter)
+chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFunction=publicChestFilter)
+cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
+miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
+
+deafultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
 
 
 renders["worldday"] = {
@@ -14,6 +126,8 @@ renders["worldday"] = {
     "title": "World Daytime",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
 }
 renders["worlddaysouth"] = {
     "world": "world",
@@ -21,12 +135,16 @@ renders["worlddaysouth"] = {
     "rendermode": smooth_lighting,
     "dimension": "overworld",
     "northdirection" : "lower-right",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
 }
 renders["worldnight"] = {
     "world": "world",
     "title": "World Nighttime",
     "rendermode": smooth_night,
     "dimension": "overworld",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
 }
 renders["worldnightsouth"] = {
     "world": "world",
@@ -34,12 +152,16 @@ renders["worldnightsouth"] = {
     "rendermode": smooth_night,
     "dimension": "overworld",
     "northdirection" : "lower-right",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
 }
 renders["worldcave"] = {
     "world": "world",
     "title": "World Caves",
     "rendermode": cave,
     "dimension": "overworld",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
 }
 
 

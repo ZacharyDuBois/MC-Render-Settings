@@ -7,7 +7,7 @@ worlds["oldworld"] = "/home/zacharydubois/render/worlds/old_world"
 worlds["oldnether"] = "/home/zacharydubois/render/worlds/old_world_nether"
 worlds["oldend"] = "/home/zacharydubois/render/worlds/old_world_the_end"
 
-        
+
 def townFilter(poi):
     if poi["id"] == "Town":
         if not "name" in poi:
@@ -106,7 +106,7 @@ places_world=[
     #Public chests
     {"id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"},
     #Cobblestone Generators
-    {"id":"Cobblestone Generator","x"-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
+    {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]

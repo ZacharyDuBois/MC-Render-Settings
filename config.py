@@ -36,16 +36,6 @@ def publicZombieShelterFilter(poi):
             poiDescription+=poi["description"]
         return (poiName,poiDescription)
 
-def privateZombieShelterFilter(poi):
-    if poi["id"] == "Private Zombie Shelter":
-        poiName = poi["name"]
-        poiDescription="<b>"+poiName+"</b>\n"
-        if "owner" in poi:
-            poiDescription+="Owner: "+poi["owner"]+"\n"
-        if "description" in poi:
-            poiDescription+=poi["description"]
-        return (poiName,poiDescription)
-
 def publicChestFilter(poi):
     if poi["id"] == "Public Chest":
         poiName = poi["name"]
@@ -58,7 +48,10 @@ def publicChestFilter(poi):
 
 def publicCobblestoneGeneratorFilter(poi):
     if poi["id"] == "Cobblestone Generator":
-        poiName = poi["name"]
+        if "name" in poi:
+            poiName = poi["name"]
+        else:
+            poiName = "Cobblestone Generator"
         poiDescription="<b>"+poiName+"</b>\n"
         if "owner" in poi:
             poiDescription+="Owner: "+poi["owner"]+"\n"

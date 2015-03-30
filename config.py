@@ -72,6 +72,19 @@ def publicFarmFilter(poi):
             poiDescription+=poi["description"]
         return (poiName,poiDescription)
 
+def peoplesHousesFilter(poi):
+    if poi["id"] == "Users Houses":
+        if "name" in poi:
+            poiName = poi["name"]
+        else:
+            poiName = "User House"
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+
 def miscFilter(poi):
     if poi["id"] == "Misc":
         poiName = poi["name"]
@@ -100,6 +113,8 @@ places_world=[
     {"id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"},
     #Cobblestone Generators
     {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
+    # Houses
+    {"id":"Users Houses","x":20,"y":79,"z":-62,"name":"The home of Zachary_DuBois","owner":"Zachary_DuBois"},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]

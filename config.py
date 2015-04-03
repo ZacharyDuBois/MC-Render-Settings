@@ -102,24 +102,9 @@ places_world=[
     #Towns
     {"id":"Town","x":-218,"y":70,"z":-1320,"name":"Caberpan"},
     {"id":"Town","x":-413,"y":63,"z":-1675,"name":"Overlake"},
-    {"id":"Town","x":-937,"y":72,"z":-1898,"name":"unnamed, formerly Bowlshaft"},
-    {"id":"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn","mayor":"Zachary_DuBois"},
-    {"id":"Town","x":-664,"y":65,"z":660,"name":"Lower Unicorn"},
-    {"id":"Town","x":-347,"y":64,"z":-2344,"name":"Halfway Point"},
-    {"id":"Town","x":545,"y":79,"z":511,"name":"Petra"},
-    {"id":"Town","x":-690,"y":64,"z":-1211}
-    {"id":"Town","x":349,"y":66,"z":3076}
-    {"id":"Town","x":1483,"y":65,"z":3266}
-    {"id":"Town","x":-699,"y":71,"z":1351}
-    {"id":"Town","x":-1179,"y":71,"z":1127}
-    {"id":"Town","x":-1880,"y":73,"z":1172}
-    {"id":"Town","x":-2440,"y":66,"z":1060}
-    {"id":"Town","x":-2715,"y":65,"z":578}
-    {"id":"Town","x":-1706,"y":72,"z":-1197}
-    {"id":"Town","x":-808,"y":65,"z":-683}
-    {"id":"Town","x":-491,"y":72,"z":-3944}
-    {"id":"Town","x":1373,"y":67,"z":-3883}
-    {"id":"Town","x":1810,"y":67,"z":-939}
+    {"id":"Town","x":-937,"y":72,"z":-1898,"name":"Bowlshaft"},
+    {"id":"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn"},
+    {"id":"Town","x":-664,"y":65,"z":660},
     #Public Zombie shelters
     {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"},
     #Public farms

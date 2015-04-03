@@ -72,8 +72,8 @@ def publicFarmFilter(poi):
             poiDescription+=poi["description"]
         return (poiName,poiDescription)
 
-def peoplesHousesFilter(poi):
-    if poi["id"] == "Users Houses":
+def userHomeFilter(poi):
+    if poi["id"] == "User Home":
         if "name" in poi:
             poiName = poi["name"]
         else:
@@ -129,11 +129,13 @@ places_world=[
     #Cobblestone Generators
     {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     # Houses
-    {"id":"Users Houses","x":20,"y":79,"z":-62,"name":"The home of Zachary_DuBois","owner":"Zachary_DuBois"},
+    {"id":"User Home","x":20,"y":79,"z":-62,"name":"The home of Zachary_DuBois","owner":"Zachary_DuBois"},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]
 
+#List of destination types
+townsDict=dict(name="User home", icon="icons/marker_user_home.png", filterFunction=townFilter,checked=True)
 townsDict=dict(name="Towns", icon="icons/marker_town.png", filterFunction=townFilter,checked=True)
 sheltersDict=dict(name="Public zombie shelters", icon="icons/marker_tower.png",filterFunction=publicZombieShelterFilter)
 farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=publicFarmFilter)

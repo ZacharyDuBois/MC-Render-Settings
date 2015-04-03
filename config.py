@@ -130,21 +130,21 @@ places_world=[
     {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     # Houses
     {"id":"User House","x":20,"y":79,"z":-62,"name":"The home of Zachary_DuBois","owner":"Zachary_DuBois"},
-    {"
+    {"id":"User House","x":48,"y":79,"z":38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."}
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]
 
 #List of destination types
-townsDict=dict(name="User house", icon="icons/marker_user_house.png", filterFunction=townFilter,checked=True)
 townsDict=dict(name="Towns", icon="icons/marker_town.png", filterFunction=townFilter,checked=True)
 sheltersDict=dict(name="Public zombie shelters", icon="icons/marker_tower.png",filterFunction=publicZombieShelterFilter)
 farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=publicFarmFilter)
 chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFunction=publicChestFilter)
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
+userHouseDict=dict(name="User house", icon="icons/marker_user_house.png", filterFunction=townFilter,checked=True)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
-defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,miscDict]
+defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,userHouseDict,miscDict]
 
 
 renders["worldday"] = {

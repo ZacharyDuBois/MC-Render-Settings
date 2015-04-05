@@ -122,6 +122,7 @@ places_world=[
     {"id":"Town","x":1810,"y":67,"z":-939}
     #Public Zombie shelters
     {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"},
+    {"id":"Zombie Shelter","x":-261,"y":79,"z":-373,"name":"Lower Unicorn Zombie Shelter"},
     #Public farms
     {"id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"},
     #Public chests
@@ -142,7 +143,7 @@ sheltersDict=dict(name="Public zombie shelters", icon="icons/marker_tower.png",f
 farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=publicFarmFilter)
 chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFunction=publicChestFilter)
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
-userHouseDict=dict(name="User house", icon="icons/marker_user_house.png", filterFunction=townFilter,checked=True)
+userHouseDict=dict(name="User houses", icon="icons/marker_user_house.png", filterFunction=userHouseFilter)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
 defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,userHouseDict,miscDict]

@@ -107,19 +107,19 @@ places_world=[
     {"id":"Town","x":-664,"y":65,"z":660,"name":"Lower Unicorn"},
     {"id":"Town","x":-347,"y":64,"z":-2344,"name":"Halfway Point"},
     {"id":"Town","x":545,"y":79,"z":511,"name":"Petra"},
-    {"id":"Town","x":-690,"y":64,"z":-1211}
-    {"id":"Town","x":349,"y":66,"z":3076}
-    {"id":"Town","x":1483,"y":65,"z":3266}
-    {"id":"Town","x":-699,"y":71,"z":1351}
-    {"id":"Town","x":-1179,"y":71,"z":1127}
-    {"id":"Town","x":-1880,"y":73,"z":1172}
-    {"id":"Town","x":-2440,"y":66,"z":1060}
-    {"id":"Town","x":-2715,"y":65,"z":578}
-    {"id":"Town","x":-1706,"y":72,"z":-1197}
-    {"id":"Town","x":-808,"y":65,"z":-683}
-    {"id":"Town","x":-491,"y":72,"z":-3944}
-    {"id":"Town","x":1373,"y":67,"z":-3883}
-    {"id":"Town","x":1810,"y":67,"z":-939}
+    {"id":"Town","x":-690,"y":64,"z":-1211},
+    {"id":"Town","x":349,"y":66,"z":3076},
+    {"id":"Town","x":1483,"y":65,"z":3266},
+    {"id":"Town","x":-699,"y":71,"z":1351},
+    {"id":"Town","x":-1179,"y":71,"z":1127},
+    {"id":"Town","x":-1880,"y":73,"z":1172},
+    {"id":"Town","x":-2440,"y":66,"z":1060},
+    {"id":"Town","x":-2715,"y":65,"z":578},
+    {"id":"Town","x":-1706,"y":72,"z":-1197},
+    {"id":"Town","x":-808,"y":65,"z":-683},
+    {"id":"Town","x":-491,"y":72,"z":-3944},
+    {"id":"Town","x":1373,"y":67,"z":-3883},
+    {"id":"Town","x":1810,"y":67,"z":-939},
     #Public Zombie shelters
     {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"},
     {"id":"Zombie Shelter","x":-261,"y":79,"z":-373,"name":"Lower Unicorn Zombie Shelter"},
@@ -132,7 +132,7 @@ places_world=[
     # Houses
     {"id":"User House","x":20,"y":79,"z":-62,"name":"Zachary_DuBois' house","owner":"Zachary_DuBois","description":"Stay off my lawn"},
     {"id":"User House","x":48,"y":79,"z":38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."},
-    {"id":"User House","x":542,"y"80,"z":487,"name":"Turg's house","owner":"Turge"}
+    {"id":"User House","x":542,"y"80,"z":487,"name":"Turg's house","owner":"Turge"},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]

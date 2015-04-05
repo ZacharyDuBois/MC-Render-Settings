@@ -129,8 +129,9 @@ places_world=[
     #Cobblestone Generators
     {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
     # Houses
-    {"id":"User House","x":20,"y":79,"z":-62,"name":"The home of Zachary_DuBois","owner":"Zachary_DuBois"},
-    {"id":"User House","x":48,"y":79,"z":38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."}
+    {"id":"User House","x":20,"y":79,"z":-62,"name":"Zachary_DuBois' house","owner":"Zachary_DuBois","description":"Stay off my lawn"},
+    {"id":"User House","x":48,"y":79,"z":38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."},
+    {"id":"User House","x":542,"y"80,"z":487,"name":"Turg's house","owner":"Turge"}
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
 ]

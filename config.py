@@ -14,10 +14,9 @@ def townFilter(poi):
             poiName = "&lt;unnamed town&gt;"
         else:
             poiName = poi["name"]
-        poiDescription=poiName
         if "region" in poi:
             poiName+=", "+poi["region"]
-            poiDescription+=",\n"+poi["region"]+"\n"
+        poiDescription=poiName+"\n"
         if "mayor" in poi:
             poiDescription+="Mayor: "+poi["mayor"]+"\n"
         elif "owner" in poi:
@@ -121,17 +120,19 @@ places_world=[
     {"id":"Town","x":1373,"y":67,"z":-3883},
     {"id":"Town","x":1810,"y":67,"z":-939},
     #Public Zombie shelters
-    {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter"},
-    {"id":"Zombie Shelter","x":-261,"y":79,"z":-373,"name":"Lower Unicorn Zombie Shelter"},
+    {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter","owner":"ZDBDOT","description":freeforall},
+    {"id":"Zombie Shelter","x":-261,"y":79,"z":-373,"name":"Lower Unicorn Zombie Shelter","owner":"ZDBDOT","description":freeforall},
+    {"id":"Zombie Shelter","x":-246,"y":73,"z":-1548,"owner":"ZST, Inc"},
+    {"id":"Zombie Shelter","x":-253,"y":73,"z":-1910,"owner":"ZST, Inc"},
     #Public farms
     {"id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"},
     #Public chests
     {"id":"Public Chest","x":-4,"y":77,"z":-43,"name":"Upper Unicorn Public Chests","owner":"Town of Upper Unicorn"},
     #Cobblestone Generators
-    {"id":"Cobblestone Generator","x":-12,"y":77,"z":31,"owner":"Compy_McKitties","description":freeforall},
+    {"id":"Cobblestone Generator","x":-12,"y":77,"z":-31,"owner":"Compy_McKitties","description":freeforall},
     # Houses
     {"id":"User House","x":20,"y":79,"z":-62,"name":"Zachary_DuBois' house","owner":"Zachary_DuBois","description":"Stay off my lawn"},
-    {"id":"User House","x":48,"y":79,"z":38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."},
+    {"id":"User House","x":-48,"y":79,"z":-38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."},
     {"id":"User House","x":542,"y":80,"z":487,"name":"Turg's house","owner":"Turge"},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}

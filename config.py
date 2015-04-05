@@ -157,11 +157,29 @@ renders["worldday"] = {
     "manualpois":places_world,
     "markers": defaultDestinationList,
 }
+renders["worlddaysouth"] = {
+    "world": "world",
+    "title": "World Daytime South",
+    "rendermode": smooth_lighting,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
+}
 renders["worldnight"] = {
     "world": "world",
     "title": "World Nighttime",
     "rendermode": smooth_night,
     "dimension": "overworld",
+    "manualpois":places_world,
+    "markers": defaultDestinationList,
+}
+renders["worldnightsouth"] = {
+    "world": "world",
+    "title": "World Nighttime South",
+    "rendermode": smooth_night,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
     "manualpois":places_world,
     "markers": defaultDestinationList,
 }
@@ -181,6 +199,13 @@ renders["nether"] = {
     "rendermode": nether_smooth_lighting,
     "dimension": "nether",
 }
+renders["nethersouth"] = {
+    "world": "nether",
+    "title": "Nether South",
+    "rendermode": nether_smooth_lighting,
+    "dimension": "nether",
+    "northdirection" : "lower-right",
+}
 renders["nethercave"] = {
     "world": "nether",
     "title": "Nether Caves",
@@ -194,6 +219,13 @@ renders["end"] = {
     "title": "End",
     "rendermode": smooth_lighting,
     "dimension": "end",
+}
+renders["endsouth"] = {
+    "world": "end",
+    "title": "End South",
+    "rendermode": smooth_lighting,
+    "dimension": "end",
+    "northdirection" : "lower-right",
 }
 renders["endcave"] = {
     "world": "end",
@@ -209,11 +241,25 @@ renders["hothday"] = {
     "rendermode": smooth_lighting,
     "dimension": "overworld",
 }
+renders["hothdaysouth"] = {
+    "world": "hoth",
+    "title": "Hoth Daytime South",
+    "rendermode": smooth_lighting,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
+}
 renders["hothnight"] = {
     "world": "hoth",
     "title": "Hoth Nighttime",
     "rendermode": smooth_night,
     "dimension": "overworld",
+}
+renders["hothnightsouth"] = {
+    "world": "hoth",
+    "title": "hoth Nighttime South",
+    "rendermode": smooth_night,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
 }
 renders["hothcave"] = {
     "world": "hoth",
@@ -229,11 +275,25 @@ renders["ampday"] = {
     "rendermode": smooth_lighting,
     "dimension": "overworld",
 }
+renders["ampdaysouth"] = {
+    "world": "amp",
+    "title": "Amplified Daytime South",
+    "rendermode": smooth_lighting,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
+}
 renders["ampnight"] = {
     "world": "amp",
     "title": "Amplified Nighttime",
     "rendermode": smooth_night,
     "dimension": "overworld",
+}
+renders["ampnightsouth"] = {
+    "world": "amp",
+    "title": "Amplified Nighttime South",
+    "rendermode": smooth_night,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
 }
 renders["ampcave"] = {
     "world": "amp",
@@ -249,11 +309,25 @@ renders["oldworldday"] = {
     "rendermode": smooth_lighting,
     "dimension": "overworld",
 }
+renders["oldworlddaysouth"] = {
+    "world": "oldworld",
+    "title": "Old World Daytime South",
+    "rendermode": smooth_lighting,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
+}
 renders["oldworldnight"] = {
     "world": "oldworld",
     "title": "Old World Nighttime",
     "rendermode": smooth_night,
     "dimension": "overworld",
+}
+renders["oldworldnightsouth"] = {
+    "world": "oldworld",
+    "title": "Old World Nighttime South",
+    "rendermode": smooth_night,
+    "dimension": "overworld",
+    "northdirection" : "lower-right",
 }
 renders["oldworldcave"] = {
     "world": "oldworld",
@@ -269,6 +343,13 @@ renders["oldnether"] = {
     "rendermode": nether_smooth_lighting,
     "dimension": "nether",
 }
+renders["oldnethersouth"] = {
+    "world": "oldnether",
+    "title": "Old Nether South",
+    "rendermode": nether_smooth_lighting,
+    "dimension": "nether",
+    "northdirection" : "lower-right",
+}
 renders["oldnethercave"] = {
     "world": "oldnether",
     "title": "Old Nether Caves",
@@ -282,6 +363,13 @@ renders["oldend"] = {
     "title": "Old End",
     "rendermode": smooth_lighting,
     "dimension": "end",
+}
+renders["oldendsouth"] = {
+    "world": "oldend",
+    "title": "End South",
+    "rendermode": smooth_lighting,
+    "dimension": "end",
+    "northdirection" : "lower-right",
 }
 renders["oldendcave"] = {
     "world": "oldend",

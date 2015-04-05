@@ -117,7 +117,7 @@ places_world=[
     {"id":"Town","x":-1706,"y":72,"z":-1197},
     {"id":"Town","x":-808,"y":65,"z":-683},
     {"id":"Town","x":-491,"y":72,"z":-3944},
-    {"id":"Town","x":1373,"y":67,"z":-3883},
+    {"id":"Town","x":-1373,"y":67,"z":-3883},
     {"id":"Town","x":1810,"y":67,"z":-939},
     #Public Zombie shelters
     {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter","owner":"ZDBDOT","description":freeforall},

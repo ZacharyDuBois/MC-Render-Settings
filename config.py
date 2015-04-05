@@ -27,7 +27,10 @@ def townFilter(poi):
 
 def publicZombieShelterFilter(poi):
     if poi["id"] == "Zombie Shelter":
-        poiName = poi["name"]
+        if not "name" in poi:
+            poiName = "Zombie Shelter"
+        else:
+            poiName = poi["name"]
         poiDescription="<b>"+poiName+"</b>\n"
         if "owner" in poi:
             poiDescription+="Owner: "+poi["owner"]+"\n"
@@ -37,7 +40,10 @@ def publicZombieShelterFilter(poi):
 
 def publicChestFilter(poi):
     if poi["id"] == "Public Chest":
-        poiName = poi["name"]
+        if not "name" in poi:
+            poiName = "Public Chest"
+        else:
+            poiName = poi["name"]
         poiDescription="<b>"+poiName+"</b>\n"
         if "owner" in poi:
             poiDescription+="Owner: "+poi["owner"]+"\n"
@@ -97,6 +103,7 @@ def miscFilter(poi):
 freeforall="Free for all to use"
 
 #Points of Intrest for "world"
+#NOTE: Unless otherwise indicated, the point of Intrest does not requite a "name" attribute
 places_world=[
     #Towns
     {"id":"Town","x":-218,"y":70,"z":-1320,"name":"Caberpan"},
@@ -134,7 +141,7 @@ places_world=[
     {"id":"User House","x":20,"y":79,"z":-62,"name":"Zachary_DuBois' house","owner":"Zachary_DuBois","description":"Stay off my lawn"},
     {"id":"User House","x":-48,"y":79,"z":-38,"name":"compy's house","owner":"Compy_McKitties","description":"It has 2 guest bedrooms for anyone who needs to stay in for the night."},
     {"id":"User House","x":542,"y":80,"z":487,"name":"Turg's house","owner":"Turge"},
-    #Miscellaneous points of interest
+    #Miscellaneous points of interest - Name required
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"},
     {"id":"Misc","x":-34,"y":80,"z":-113,"name":"Upper Unicorn Recycling Center","owner":"Town of Upper Unicorn"}
     

@@ -136,6 +136,8 @@ places_world=[
     {"id":"User House","x":542,"y":80,"z":487,"name":"Turg's house","owner":"Turge"},
     #Miscellaneous points of interest
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"}
+    {"id":"Misc","x":-34,"y":80,"z":-113,"name":"Upper Unicorn Recycling Center","owner":"Town of Upper Unicorn"}
+    
 ]
 
 #List of destination types

@@ -143,7 +143,7 @@ sheltersDict=dict(name="Public zombie shelters", icon="icons/marker_tower.png",f
 farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=publicFarmFilter)
 chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFunction=publicChestFilter)
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
-userHouseDict=dict(name="User houses", icon="icons/marker_user_house.png", filterFunction=userHouseFilter)
+userHouseDict=dict(name="User houses", icon="icons/marker_user_house.png", filterFunction=userHouseFilter,checked=True)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
 defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,userHouseDict,miscDict]

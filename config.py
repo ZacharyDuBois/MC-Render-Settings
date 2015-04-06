@@ -112,7 +112,7 @@ places_world=[
     {"id":"Town","x":-14,"y":72,"z":-2,"name":"Upper Unicorn","mayor":"Zachary_DuBois"},
     {"id":"Town","x":-664,"y":65,"z":660,"name":"Lower Unicorn"},
     {"id":"Town","x":-347,"y":64,"z":-2344,"name":"Halfway Point"},
-    {"id":"Town","x":545,"y":79,"z":511,"name":"Petra"},
+    {"id":"Town","x":535,"y":104,"z":569,"name":"Petra","owner":"Turge"},
     {"id":"Town","x":690,"y":64,"z":-1211,"name":"Ulapool Demo"},
     {"id":"Town","x":-349,"y":66,"z":3076},
     {"id":"Town","x":-1483,"y":65,"z":3266},
@@ -122,7 +122,7 @@ places_world=[
     {"id":"Town","x":-2440,"y":66,"z":1060},
     {"id":"Town","x":-2715,"y":65,"z":578},
     {"id":"Town","x":-1706,"y":72,"z":-1197},
-    {"id":"Town","x":-808,"y":65,"z":-683,"name":"No name"},
+    {"id":"Town","x":-808,"y":65,"z":-683,"name":"No Name"},
     {"id":"Town","x":-491,"y":72,"z":-3944},
     {"id":"Town","x":-1373,"y":67,"z":-3883},
     {"id":"Town","x":1810,"y":67,"z":-939},
@@ -144,6 +144,7 @@ places_world=[
     #Miscellaneous points of interest - Name required
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"},
     {"id":"Misc","x":-34,"y":80,"z":-113,"name":"Upper Unicorn Recycling Center","owner":"Town of Upper Unicorn"}
+    #{"id":"Misc","x":71, "y":76, "z":109,"name":"Upper Unicorn Metro Station (Under construction)"}
     
 ]
 

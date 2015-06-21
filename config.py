@@ -90,6 +90,19 @@ def userHouseFilter(poi):
             poiDescription+=poi["description"]
         return (poiName,poiDescription)
 
+def minecartStationFilter(poi):
+    if poi["id"] == "Minecart Station":
+        if "name" in poi:
+            poiName = poi["name"]
+        else:
+            poiName = "Minecart Station"
+        poiDescription="<b>"+poiName+"</b>\n"
+        if "owner" in poi:
+            poiDescription+="Owner: "+poi["owner"]+"\n"
+        if "description" in poi:
+            poiDescription+=poi["description"]
+        return (poiName,poiDescription)
+	
 def miscFilter(poi):
     if poi["id"] == "Misc":
         poiName = poi["name"]
@@ -156,8 +169,9 @@ places_world=[
     #Miscellaneous points of interest - Name required
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"},
     {"id":"Misc","x":-34,"y":80,"z":-113,"name":"Upper Unicorn Recycling Center","owner":"Town of Upper Unicorn"}
-    #{"id":"Misc","x":71, "y":76, "z":109,"name":"Upper Unicorn Metro Station (Under construction)"}
-	#{"id":"Misc","x":71, "y":76, "z":109,"name":"&lt;unnamed metro station&gt;"}
+	#Minecart Stations
+    {"id":"Minecart Station","x":71, "y":76, "z":109,"name":"Upper Unicorn Metro Station (Under construction)"}
+	{"id":"Minecart Station","x":-154, "y":75, "z":-421}
     
 ]
 
@@ -168,6 +182,7 @@ farmsDict=dict(name="Public farms", icon="icons/marker_hoe.png", filterFunction=
 chestsDict=dict(name="Public chests", icon="icons/marker_chest.png",filterFunction=publicChestFilter)
 cobbleDict=dict(name="Cobblestone generators", icon="icons/marker_cobblestone_generator.png", filterFunction=publicCobblestoneGeneratorFilter)
 userHouseDict=dict(name="User houses", icon="icons/marker_user_house.png", filterFunction=userHouseFilter,checked=True)
+#userHouseDict=dict(name="Minecart stations", icon="icons/marker_minecart.png", filterFunction=minecartStationFilter)
 miscDict=dict(name="Miscellaneous",icon="icons/marker_misc.png", filterFunction=miscFilter)
 
 defaultDestinationList=[townsDict,sheltersDict,farmsDict,chestsDict,cobbleDict,userHouseDict,miscDict]

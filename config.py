@@ -102,7 +102,7 @@ def minecartStationFilter(poi):
         if "description" in poi:
             poiDescription+=poi["description"]
         return (poiName,poiDescription)
-	
+
 def miscFilter(poi):
     if poi["id"] == "Misc":
         poiName = poi["name"]
@@ -172,7 +172,7 @@ places_world=[
 	#Minecart Stations
     {"id":"Minecart Station","x":71, "y":76, "z":109,"name":"Upper Unicorn Metro Station (Under construction)"}
 	{"id":"Minecart Station","x":-154, "y":75, "z":-421}
-    
+
 ]
 
 #List of destination types
@@ -419,4 +419,5 @@ renders["oldendcave"] = {
 
 
 outputdir = "/home/zacharydubois/render/done"
-texturepath = "/home/zacharydubois/render/texturepack.zip"
+# Does not work with 1.8.7
+#texturepath = "/home/zacharydubois/render/texturepack.zip"

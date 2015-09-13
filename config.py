@@ -127,13 +127,13 @@ places_world=[
     {"id":"Town","x":-347,"y":64,"z":-2344,"name":"Halfway Point"},
     {"id":"Town","x":535,"y":104,"z":569,"name":"Petra","owner":"Turge"},
     {"id":"Town","x":690,"y":64,"z":-1211,"name":"Ulapool Demo"},
-	{"id":"Town","x":249,"y":69,"z":-1848,"name":"Ravine Town"},
-	{"id":"Town","x":772,"y":70,"z":-1944,"name":"Cannon Town"},
-	{"id":"Town","x":1908,"y":65,"z":-2408,"name":"Riverlake"},
-	{"id":"Town","x":2164,"y":65,"z":-2408,"name":"Nadeville"},
-	{"id":"Town","x":2372,"y":69,"z":-1944,"name":"Fragville"},
-	{"id":"Town","x":2900,"y":74,"z":-1912,"name":"Nadeville"},
-	{"id":"Town","x":1892,"y":79,"z":-1849,"name":"Frank Forest"},
+    {"id":"Town","x":249,"y":69,"z":-1848,"name":"Ravine Town"},
+    {"id":"Town","x":772,"y":70,"z":-1944,"name":"Cannon Town"},
+    {"id":"Town","x":1908,"y":65,"z":-2408,"name":"Riverlake"},
+    {"id":"Town","x":2164,"y":65,"z":-2408,"name":"Nadeville"},
+    {"id":"Town","x":2372,"y":69,"z":-1944,"name":"Fragville"},
+    {"id":"Town","x":2900,"y":74,"z":-1912,"name":"Nadeville"},
+    {"id":"Town","x":1892,"y":79,"z":-1849,"name":"Frank Forest"},
     {"id":"Town","x":-349,"y":66,"z":3076},
     {"id":"Town","x":-1483,"y":65,"z":3266},
     {"id":"Town","x":-699,"y":71,"z":1351},
@@ -149,13 +149,13 @@ places_world=[
     #Public Zombie shelters
     {"id":"Zombie Shelter","x":-92,"y":77,"z":-433,"name":"Northern Unicorn Zombie Shelter","owner":"ZDBDOT","description":freeforall},
     {"id":"Zombie Shelter","x":-261,"y":79,"z":373,"name":"Lower Unicorn Zombie Shelter","owner":"ZDBDOT","description":freeforall},
-	{"id":"Zombie Shelter","x":562,"y":67,"z":-1871,"name":"Cannon Town Zombie Shelter","owner":"ZDBDOT","description":freeforall},
-	{"id":"Zombie Shelter","x":1620,"y":67,"z":-1742,"name":"Frank Lakes Zombie Shelter","owner":"ZDBDOT","description":freeforall},
+    {"id":"Zombie Shelter","x":562,"y":67,"z":-1871,"name":"Cannon Town Zombie Shelter","owner":"ZDBDOT","description":freeforall},
+    {"id":"Zombie Shelter","x":1620,"y":67,"z":-1742,"name":"Frank Lakes Zombie Shelter","owner":"ZDBDOT","description":freeforall},
     {"id":"Zombie Shelter","x":-246,"y":73,"z":-1548,"owner":"ZST, Inc"},
     {"id":"Zombie Shelter","x":-253,"y":73,"z":-1910,"owner":"ZST, Inc"},
-	{"id":"Zombie Shelter","x":-287,"y":74,"z":-2695,"owner":"ZST, Inc"},
-	{"id":"Zombie Shelter","x":20,"y":79,"z":-2940,"owner":"ZST, Inc"},
-	{"id":"Zombie Shelter","x":49,"y":85,"z":-3101,"owner":"ZST, Inc"},
+    {"id":"Zombie Shelter","x":-287,"y":74,"z":-2695,"owner":"ZST, Inc"},
+    {"id":"Zombie Shelter","x":20,"y":79,"z":-2940,"owner":"ZST, Inc"},
+    {"id":"Zombie Shelter","x":49,"y":85,"z":-3101,"owner":"ZST, Inc"},
     #Public farms
     {"id":"Public Farm","x":-28,"y":79,"z":-44,"owner":"Town of Upper Unicorn"},
     #Public chests
@@ -169,9 +169,9 @@ places_world=[
     #Miscellaneous points of interest - Name required
     {"id":"Misc","x":-6,"y":76,"z":-22,"name":"Zachary DuBois Department of Transportation - world headquarters","owner":"ZDBDOT"},
     {"id":"Misc","x":-34,"y":80,"z":-113,"name":"Upper Unicorn Recycling Center","owner":"Town of Upper Unicorn"},
-	#Minecart Stations
+    #Minecart Stations
     {"id":"Minecart Station","x":71,"y":76,"z":109,"name":"Upper Unicorn Metro Station (Under construction)"},
-	{"id":"Minecart Station","x":-154, "y":75, "z":-421}
+    {"id":"Minecart Station","x":-154, "y":75, "z":-421}
 
 ]
 

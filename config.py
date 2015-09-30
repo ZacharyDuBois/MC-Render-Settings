@@ -295,7 +295,7 @@ renders["hothnight"] = {
 }
 renders["hothnightsouth"] = {
     "world": "hoth",
-    "title": "hoth Nighttime South",
+    "title": "Hoth Nighttime South",
     "rendermode": smooth_night,
     "dimension": "overworld",
     "northdirection" : "lower-right",
